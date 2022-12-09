@@ -11,9 +11,9 @@ C++ 언어로 작성하였고 OpenCV 라이브러리를 이용해 영상처리�
 
 # 기능 설명
 ## 1. 영상 변환기능 ##  
-<img src="/img/손가락끝검출.png" width="400" height="300">  
+<img src="/img/영상변환기능.png" width="400" height="300">  
 
-- 카메라 화면의 RGB영상을 YCrCb영상으로 변환합니다.
+- 카메라 화면의 RGB영상을 HSV영상 또는 YCrCb영상으로 변환합니다.
 
 ```c++
 // RGB 영상을 HSV 영상 또는 YCrCb 영상으로 변환
@@ -24,9 +24,21 @@ cvtColor(frame, frame_YCrCb, COLOR_BGR2YCrCb); // 피아노 선택 상태시
 ### 
 
 ## 2. 손 색상 영역 이진화 기능 ##  
-<img src="/img/드럼스틱.png" width="400" height="300">  
+<img src="/img/영상이진화.png" width="400" height="300">  
 
-- 드럼 선택 시 카메라 화면에 검출되는 빨간색, 파란색 물체의 중심좌표를 표시합니다.
+- 변환된 YCrCb영상에서 손 피부색 영역에 해당하는 범위의 값을 추출해 이진화 합니다.
+
+```c++
+// YCrCb 영상의 특정 범위(손 피부색 영역)의 두 임계값 사이의의 값만 추출
+inRange(frame_YCrCb, Scalar(0, 133, 77), Scalar(255, 173, 127), frame_bin);
+```
+
+### 
+
+## 3. 손가락 끝 검출기능##  
+<img src="/img/손가락끝검출.png" width="400" height="300">  
+
+- 최초 실행시 원하는 악기를 선택할 수 있고, 선택 이후에도 화면의 우측 상단의 메뉴를 통해 악기 변경이 가능합니다.
 
 ### 
 
