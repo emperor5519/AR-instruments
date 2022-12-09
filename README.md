@@ -5,27 +5,27 @@ C++ 언어로 작성하였고 OpenCV 라이브러리를 이용해 영상처리�
 ### 
 
 # 블럭도
-<img src="/img/블럭도.png" width="500" height="350">  
+<img src="/img/블럭도.png" width="500" height="300">  
 
 ### 
 
 # 기능 설명
 ## 1. 영상 변환기능 ##  
-<img src="/img/영상변환기능.png" width="500" height="350">  
+<img src="/img/영상변환기능.png" width="600" height="300">  
 
 - 카메라 화면의 RGB영상을 HSV영상 또는 YCrCb영상으로 변환합니다.
 
 ### 
 
 ## 2. 손 색상 영역 이진화 기능 ##  
-<img src="/img/영상이진화.png" width="400" height="300">  
+<img src="/img/영상이진화.png" width="600" height="300">  
 
 - 변환된 YCrCb영상에서 손 피부색 영역에 해당하는 범위의 값을 추출해 이진화 합니다.
 
 ### 
 
 ## 3. 손가락 끝 검출기능 ##  
-<img src="/img/컨벡스결함.png" width="400" height="300">  
+<img src="/img/컨벡스결함.png" width="600" height="300">  
 
 - 손 영역의 외곽선을 검출합니다.
 - 손 영역의 외곽선과 Convex hull 다각형의 결함(외곽선과 다각형 내의 빈 공간)인 Convex 결함을 검출합니다.
@@ -34,7 +34,7 @@ C++ 언어로 작성하였고 OpenCV 라이브러리를 이용해 영상처리�
 ### 
 
 ## 4. 무게중심 검출기능 ##  
-<img src="/img/무게중심검출.png" width="400" height="300">  
+<img src="/img/무게중심검출.png" width="500" height="300">  
 
 - 변환된 HSV영상에서 특정 색 영역을 검출하고, 영역의 모든 픽셀들의 x, y좌표의 각각의 평균값을 구해 무게중심 좌표를 검출합니다
 
