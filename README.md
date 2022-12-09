@@ -55,6 +55,6 @@ C++ 언어로 작성하였고 OpenCV 라이브러리를 이용해 영상처리�
 ### 
 
 # 동영상 링크(이미지를 클릭하면 유튜브 영상으로 이동합니다) #
-[![Video Label](https://github.com/emperor5519/AR-instrument/blob/main/img/%EC%9C%A0%ED%8A%9C%EB%B8%8C%EC%8D%B8%EB%84%A4%EC%9D%BC.png)](https://www.youtube.com/watch?v=4u47xhIxIt0&ab_channel=%EC%B5%9C%EC%8A%B9%ED%98%B8)
+[![Video Label](https://github.com/emperor5519/AR-instruments/blob/main/img/%EC%9C%A0%ED%8A%9C%EB%B8%8C%EC%8D%B8%EB%84%A4%EC%9D%BC.png)](https://www.youtube.com/watch?v=4u47xhIxIt0&ab_channel=%EC%B5%9C%EC%8A%B9%ED%98%B8)
 
 사람인 이력서에도 동영상이 첨부되어 있습니다  
